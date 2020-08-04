@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginPane" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #ADFF2F;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Login">
+   <children>
+      <HBox layoutX="82.0" layoutY="56.0" prefHeight="60.0" prefWidth="462.0">
+         <children>
+            <Label prefHeight="80.0" prefWidth="214.0" text="Phone number :">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="phone_id" prefHeight="87.0" prefWidth="249.0">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </HBox>
+      <HBox layoutX="82.0" layoutY="158.0" prefHeight="41.0" prefWidth="448.0">
+         <children>
+            <Label prefHeight="76.0" prefWidth="212.0" text="Password : ">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <JFXPasswordField fx:id="password" prefHeight="76.0" prefWidth="245.0">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </JFXPasswordField>
+         </children>
+      </HBox>
+      <JFXButton fx:id="loginButton" buttonType="RAISED" layoutX="85.0" layoutY="501.0" onAction="#loginAction" prefHeight="43.0" prefWidth="146.0" ripplerFill="#2fff00" style="-fx-background-color: #ffff00;" text="login">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="back_button" buttonType="RAISED" layoutX="378.0" layoutY="501.0" onAction="#BackAction" prefHeight="60.0" prefWidth="146.0" ripplerFill="#2fff00" style="-fx-background-color: #ffff00;" text="back">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </JFXButton>
+      <TextArea fx:id="loginCode" layoutX="85.0" layoutY="283.0" prefHeight="193.0" prefWidth="448.0" style="-fx-background-color: #FFFFFF;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="startPane" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #ADFF2F;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginOrSignup">
+   <children>
+      <ImageView fx:id="image" fitHeight="395.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/shohoz_logo_fb.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="login_button" buttonType="RAISED" layoutX="133.0" layoutY="437.0" onAction="#loginAction" prefHeight="70.0" prefWidth="176.0" ripplerFill="#04250312" style="-fx-background-color: #ffff00;" text="login" textFill="#09570d">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="signupnutton" buttonType="RAISED" layoutX="366.0" layoutY="437.0" onAction="#SignUpAction" prefHeight="70.0" prefWidth="176.0" ripplerFill="#04250312" style="-fx-background-color: #ffff00;" text="SignUp" textFill="#09570d">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

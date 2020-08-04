@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="driverPane" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #ADFF2F;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NearbyDriver">
+   <children>
+      <TableView fx:id="tableField" layoutX="98.0" layoutY="78.0" prefHeight="172.0" prefWidth="489.0">
+        <columns>
+          <TableColumn fx:id="nameField" prefWidth="253.0" text="name" />
+          <TableColumn fx:id="currentLocationField" prefWidth="235.0" text="current_location" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="212.0" prefHeight="78.0" prefWidth="277.0" text="Nearby Drivers">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="backButton" buttonType="RAISED" layoutX="489.0" layoutY="536.0" onAction="#backButtonAction" prefHeight="38.0" prefWidth="106.0" style="-fx-background-color: #ffff00;" text="back">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextArea fx:id="textArea" layoutX="98.0" layoutY="285.0" prefHeight="230.0" prefWidth="489.0" style="-fx-background-color: #FFFFFF;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextArea>
+   </children>
+</AnchorPane>

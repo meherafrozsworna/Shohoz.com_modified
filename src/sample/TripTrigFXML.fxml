@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="trigAcceptPane" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #ADFF2F;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TripTrigFXML">
+   <children>
+      <Label alignment="CENTER" layoutX="182.0" layoutY="14.0" prefHeight="41.0" prefWidth="355.0" text="Is_accepted Trigger on TripTable">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableField" layoutX="67.0" layoutY="66.0" prefHeight="80.0" prefWidth="567.0">
+        <columns>
+          <TableColumn fx:id="is_acceptedField" prefWidth="137.0" text="is_accepted" />
+          <TableColumn fx:id="trip_id_field" prefWidth="151.0" text="trip_id" />
+            <TableColumn fx:id="payment_idField" prefWidth="127.0" text="payment_id" />
+            <TableColumn fx:id="driver_id_field" prefWidth="151.0" text="driver_id" />
+        </columns>
+      </TableView>
+      <JFXTextArea fx:id="text_area" layoutX="67.0" layoutY="167.0" prefHeight="90.0" prefWidth="567.0" style="-fx-background-color: #FFFFFF;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextArea>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="232.0" layoutY="280.0" prefHeight="41.0" prefWidth="237.0" style="-fx-background-color: #FFFFFF;" text="Trigger Function">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="trigFunctionField" layoutX="73.0" layoutY="345.0" prefHeight="182.0" prefWidth="567.0" style="-fx-background-color: #FFFFFF;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextArea>
+      <JFXButton fx:id="backButton" buttonType="RAISED" layoutX="532.0" layoutY="545.0" onAction="#backButtonAction" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #ffff00;" text="Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

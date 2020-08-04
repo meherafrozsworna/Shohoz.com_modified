@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="tripPromoPane" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #ADFF2F;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TripPromoFXML">
+   <children>
+      <Label alignment="CENTER" layoutX="138.0" layoutY="35.0" prefHeight="69.0" prefWidth="425.0" text="the trips which have used a promo code">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableField" layoutX="191.0" layoutY="104.0" prefHeight="155.0" prefWidth="319.0">
+        <columns>
+          <TableColumn fx:id="trip_idField" prefWidth="325.0" text="Trip_id" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="backButton" buttonType="RAISED" layoutX="285.0" layoutY="496.0" onAction="#backButtonAction" prefHeight="61.0" prefWidth="131.0" style="-fx-background-color: #ffff00;" text="Back">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXTextArea fx:id="textArea" layoutX="118.0" layoutY="289.0" style="-fx-background-color: #FFFFFF;" />
+   </children>
+</AnchorPane>
